@@ -79,7 +79,10 @@ const List = ({ style, dataManagerObject, agencyOverride, vehicleType }) => {
     </div>
   ) : (
     <div className='contentList' style={style}>
-      <div className='trainHeader'>
+      <div className='trainHeader' style={{
+        backgroundColor: `#${trip.lineColor}`,
+        color: `#${trip.lineTextColor}`
+      }}>
         <h2>
           {trip.line}
           {agencies[agency].addLine ? " Line " : " "}#{tripID}
