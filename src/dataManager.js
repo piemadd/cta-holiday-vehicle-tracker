@@ -1,7 +1,7 @@
 import { agencies } from "./config";
 
 const createFilteredData = (data, targetTrainNum) => {
-  let debug = true;
+  let debug = false;
 
   let hasTargetTrain = true;
   const trainKeys = Object.keys(data.trains);
