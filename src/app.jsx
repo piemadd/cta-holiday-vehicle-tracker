@@ -27,9 +27,9 @@ export const App = () => {
           </h2>
           <p>
             <i>
-              Also follow the train {" "}
-              <a href='https://twitter.com/ChiHolidayTrain' target='_blank'>
-                on Twitter
+              Also follow the train and Bus{" "}
+              <a href='https://bsky.app/profile/holiday.transitstat.us' target='_blank'>
+                on Bluesky
               </a>
             </i>
           </p>
@@ -131,7 +131,7 @@ export const App = () => {
         </section>
         <footer>
           <p>
-            v0.0.1 | &copy;<a href='https://piemadd.com/'>Piero</a> 2023 |{" "}
+            v0.1.0 | &copy;<a href='https://piemadd.com/'>Piero</a> 2024 |{" "}
             <a href='https://transitstat.us/api' target='_blank'>
               API
             </a>
