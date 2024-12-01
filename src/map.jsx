@@ -368,29 +368,13 @@ const Map = ({ style, dataManagerObject, agencyOverride }) => {
               type: "symbol",
               source: "trains",
               layout: {
-                "icon-image": ["get", "routeColor"],
+                "icon-image": ["concat", ["get", "routeColor"], "_arrow"],
                 "icon-size": 0.5,
                 "icon-allow-overlap": true,
                 "text-font": ["Open Sans Regular"],
               },
               paint: {},
             });
-
-            if (agencies[agency].showArrow) {
-              map.current.addLayer({
-                id: "trains_arrows",
-                type: "symbol",
-                source: "trains",
-                layout: {
-                  "icon-image": ["concat", ["get", "routeColor"], "_arrow"],
-                  "icon-size": 0.5,
-                  "icon-rotate": ["get", "heading"],
-                  "icon-allow-overlap": true,
-                  "text-font": ["Open Sans Regular"],
-                },
-                paint: {},
-              });
-            }
           });
 
         map.current.on("click", (e) => {
