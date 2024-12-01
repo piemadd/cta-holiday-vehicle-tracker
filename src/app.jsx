@@ -131,7 +131,7 @@ export const App = () => {
         </section>
         <footer>
           <p>
-            v0.1.0 | &copy;<a href='https://piemadd.com/'>Piero</a> 2024 |{" "}
+            v0.1.1 | &copy;<a href='https://piemadd.com/'>Piero</a> 2024 |{" "}
             <a href='https://transitstat.us/api' target='_blank'>
               API
             </a>
